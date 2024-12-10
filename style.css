@@ -19,7 +19,7 @@ html {
 
 @keyframes unfold {
   from {height: 0%;}
-  to {height: 60%;}
+  to {height: fit-content;}
 }
 
 @keyframes childDown {
@@ -37,6 +37,10 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
 .protest-revolution-regular {
     font-family: "Protest Revolution", sans-serif;
     font-weight: 800;
@@ -62,33 +66,108 @@ body {
     font-weight: 400;
     font-style: normal;
   }
-.title_big_screen {
-  display: none;
-}
-.title_small_screen {
-  display: flex;
-  justify-content: center;
-  font: bold;
-}
+/* ############################################# */
+/* ONLY MOBILE */
+/* ############################################# */
 .headers {
   background-color: rgb(65, 79, 69);
   display: flex;
   align-items: baseline;
-  justify-content: space-around;
+  padding: 1rem;
   list-style: none;
   color: aliceblue;
-  height: 4rem;
-  padding: 1.2rem;
+  height: fit-content;
+  
   font-size: 1.2rem;
   z-index: 0;
 }
 
-.sections:hover {
-    scale: 1.05;
-  cursor: pointer;
-  animation: fadeIn 0.5s ease-in-out;
 
+.headers svg {
+  color: white;
+  width: 1.5rem;
   
+  background-color: aliceblue;
+  border: solid rgb(245, 242, 242, 0.3) 3px;
+}
+
+
+.nested_headers {
+  animation: fadeIn 1s ease-in-out;
+  background-color: rgb(65, 79, 69);
+  z-index: 998;
+  margin: 0;
+
+
+}
+
+.nested_headers ul {
+color: white;
+width: fit-content;
+  list-style: none;
+ 
+  margin: 0;
+}
+
+.nested_headers li {
+ margin: 1rem;
+ font-size: 1.2rem;
+ position: relative;
+ right: 1rem;
+ 
+ 
+}
+
+.nested_headers hr {
+  width: 6rem;
+
+}
+.close_header {
+ padding: 0.5rem;
+ margin-left: 10rem;
+  border-radius: 100%;
+  border: solid black 1px;
+}
+
+.nested_sections1 {
+  margin: 0;
+  animation: fadeIn 1s ease-in-out;
+  background-color: rgb(65, 79, 69);
+  z-index: 997;
+
+}
+.nested_sections2 {
+  margin: 0;
+  animation: fadeIn 1s ease-in-out;
+  background-color: rgb(65, 79, 69);
+  z-index: 996;
+
+}
+.nested_sections3 {
+  margin: 0;
+  animation: fadeIn 1s ease-in-out;
+  background-color: rgb(65, 79, 69);
+  z-index: 995;
+
+}
+.nested_sections4 {
+  margin: 0;
+
+  animation: fadeIn 1s ease-in-out;
+  background-color: rgb(65, 79, 69);
+  z-index: 994;
+
+}
+.close_section {
+  padding: 0.5rem;
+  margin-left: 9rem;
+}
+
+/* ######################################### */
+/* MOBILE AND DESKTOP */
+/* ######################################### */
+.sections {
+    display: none;
 } 
 
 .sub_headers {
@@ -163,7 +242,7 @@ img {
   list-style: none;
   gap: 1rem;
 }
-svg {
+.publishing svg {
   width:0.8rem; 
 }
 
@@ -402,10 +481,6 @@ border: solid black 1px;
 
 
 
-
-
-
-
 /* ###################################" */
 /* ####################################" */
 @media screen and (min-width: 768px), (max-width: 1024) {
@@ -459,11 +534,12 @@ body {
     display: block;
    
   }
-  .title_small_screen {
+  .mobile_header {
     display: none;
-    overflow: hidden;
-    
   }
+
+
+
   .headers {
     background-color: rgb(65, 79, 69);
     display: flex;
@@ -476,9 +552,15 @@ body {
     font-size: 1.8rem;
   }
   
+  .sections {
+    display: block;
+  }
   .sections:hover {
     
+    scale: 1.05;
     cursor: pointer;
+    animation: fadeIn 0.5s ease-in-out;
+   
   } 
   
   .sub_headers {
@@ -676,11 +758,17 @@ body {
     
   }
 
-  
-  
+  .mobile_header {
+    display: none;
+  }
+  .sections {
+    display: block;
+  }
   .sections:hover {
    
+    scale: 1.05;
     cursor: pointer;
+    animation: fadeIn 0.5s ease-in-out;
   } 
   
   .sub_headers {

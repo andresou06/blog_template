@@ -1,5 +1,3 @@
-
-
 const oneHeader = document.querySelector("#one");
 const oneChild = document.querySelector("#one_child");
 
@@ -245,4 +243,64 @@ mobile_slideIn5.addEventListener('mouseout', () => {
 
 slidebtn5.addEventListener('mouseout', () => {
     mobile_slideIn5.style.display = 'none';
+})
+
+// ##############################################
+// MOBILE HEADERS Modal
+
+const mobile_headers = document.querySelector('.mobile_header');
+const nested_headers = document.querySelector('.nested_headers');
+const close_header = document.querySelector('.close_header');
+
+
+mobile_headers.addEventListener('click', () => {
+    nested_headers.showModal();
+    
+});
+
+if (close_header && nested_headers) {
+
+close_header.addEventListener('click', () => {
+        nested_headers.close();
+});
+
+} else {
+    console.error('Dialog or button not found something is wrong about my js flow')
+}
+
+
+// #############################################
+// OPEN MOBILE SECTIONS
+
+const openBtnsect1 = document.querySelector('.open_sect1');
+const openBtnsect2 = document.querySelector('.open_sect2');
+const openBtnsect3 = document.querySelector('.open_sect3');
+const openBtnsect4 = document.querySelector('.open_sect4');
+
+const nested_sect1 = document.querySelector('.nested_sections1');
+const nested_sect2 = document.querySelector('.nested_sections2');
+const nested_sect3 = document.querySelector('.nested_sections3');
+const nested_sect4 = document.querySelector('.nested_sections4');
+
+const close_section = document.querySelector('.close_section');
+
+close_section.addEventListener('click', () => {
+    
+    nested_sect1.close();
+})
+
+openBtnsect1.addEventListener('click', () => {
+    nested_sect1.showModal()
+})
+
+openBtnsect2.addEventListener('click', () => {
+    nested_sect2.showModal()
+})
+
+openBtnsect3.addEventListener('click', () => {
+    nested_sect3.showModal()
+})
+
+openBtnsect4.addEventListener('click', () => {
+    nested_sect4.showModal()
 })

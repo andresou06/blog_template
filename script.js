@@ -120,9 +120,7 @@ mobile_slideIn.addEventListener('mouseout', () => {
     mobile_slideIn.style.display = 'none'; 
 })
 
-slidebtn.addEventListener('mouseout', () => {
-    mobile_slideIn.style.display = 'none';
-})
+
 
 
 // #######################################
@@ -150,9 +148,6 @@ mobile_slideIn2.addEventListener('mouseout', () => {
     mobile_slideIn2.style.display = 'none'; 
 })
 
-slidebtn2.addEventListener('mouseout', () => {
-    mobile_slideIn2.style.display = 'none';
-})
 
 
 
@@ -181,9 +176,6 @@ mobile_slideIn3.addEventListener('mouseout', () => {
     mobile_slideIn3.style.display = 'none'; 
 })
 
-slidebtn3.addEventListener('mouseout', () => {
-    mobile_slideIn3.style.display = 'none';
-})
 
 
 
@@ -241,9 +233,7 @@ mobile_slideIn5.addEventListener('mouseout', () => {
     mobile_slideIn5.style.display = 'none'; 
 })
 
-slidebtn5.addEventListener('mouseout', () => {
-    mobile_slideIn5.style.display = 'none';
-})
+
 
 // ##############################################
 // MOBILE HEADERS Modal
@@ -282,13 +272,31 @@ const nested_sect2 = document.querySelector('.nested_sections2');
 const nested_sect3 = document.querySelector('.nested_sections3');
 const nested_sect4 = document.querySelector('.nested_sections4');
 
-const close_section = document.querySelector('.close_section');
+const close_section1 = document.querySelector('.close_section1');
 
-close_section.addEventListener('click', () => {
+const close_section2 = document.querySelector('.close_section2');
+
+const close_section3 = document.querySelector('.close_section3');
+
+const close_section4 = document.querySelector('.close_section4');
+
+close_section1.addEventListener('click', () => {
     
     nested_sect1.close();
 })
 
+close_section2.addEventListener('click', () => {
+    
+    nested_sect2.close();
+})
+close_section3.addEventListener('click', () => {
+    
+    nested_sect3.close();
+})
+close_section4.addEventListener('click', () => {
+    
+    nested_sect4.close();
+})
 openBtnsect1.addEventListener('click', () => {
     nested_sect1.showModal()
 })

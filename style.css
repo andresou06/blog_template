@@ -27,6 +27,11 @@ html {
   to {height: 100%;}
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 
 body {
 
@@ -96,7 +101,8 @@ a {
   animation: fadeIn 1s ease-in-out;
   background-color: rgb(65, 79, 69);
   z-index: 998;
-  margin: 0;
+  width: 100vw;
+  height: 100vh;
 
 
 }
@@ -111,7 +117,7 @@ width: fit-content;
 
 .nested_headers li {
  margin: 1rem;
- font-size: 1.2rem;
+ font-size: 3rem;
  position: relative;
  right: 1rem;
  
@@ -124,38 +130,46 @@ width: fit-content;
 }
 .close_header {
  padding: 0.5rem;
- margin-left: 10rem;
+ margin-left: 70%;
   border-radius: 100%;
   border: solid black 1px;
 }
 
 .nested_sections1 {
-  margin: 0;
+  
   animation: fadeIn 1s ease-in-out;
   background-color: rgb(65, 79, 69);
   z-index: 997;
+  width: 100vw;
+  height: 100vh;
 
 }
 .nested_sections2 {
-  margin: 0;
+  
   animation: fadeIn 1s ease-in-out;
   background-color: rgb(65, 79, 69);
   z-index: 996;
+  width: 100vw;
+  height: 100vh;
 
 }
 .nested_sections3 {
-  margin: 0;
+  
   animation: fadeIn 1s ease-in-out;
   background-color: rgb(65, 79, 69);
   z-index: 995;
+  width: 100vw;
+  height: 100vh;
 
 }
 .nested_sections4 {
-  margin: 0;
+  
 
   animation: fadeIn 1s ease-in-out;
   background-color: rgb(65, 79, 69);
   z-index: 994;
+  width: 100vw;
+  height: 100vh;
 
 }
 .close_section {
@@ -557,7 +571,7 @@ body {
   }
   .sections:hover {
     
-    scale: 1.05;
+    
     cursor: pointer;
     animation: fadeIn 0.5s ease-in-out;
    
@@ -765,8 +779,6 @@ body {
     display: block;
   }
   .sections:hover {
-   
-    scale: 1.05;
     cursor: pointer;
     animation: fadeIn 0.5s ease-in-out;
   } 

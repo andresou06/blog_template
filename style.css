@@ -206,6 +206,7 @@ width: fit-content;
   justify-content: center;
   justify-items: center;
   margin: 3rem;
+  z-index: -1;
   
 }
 span {
@@ -271,12 +272,11 @@ svg:hover {
 .child {
   
   white-space: wrap;
-  position: sticky;
-  right: auto;
+  
   width: fit-content;
   height: fit-content;
   list-style: none;
-  
+  z-index: 0;
   width: 100%;
   background-color: rgb(65, 79, 69);
 
@@ -289,8 +289,7 @@ svg:hover {
   white-space: wrap;
   font-size: 0.7rem;
   line-height: 3rem;
-  position: relative;
-  right: 2rem;
+  
 
 }
 
@@ -687,8 +686,7 @@ body {
    white-space: wrap;
    font-size: 2rem;
    line-height: 3rem;
-   position: relative;
-   right: 2rem;
+   
  
  }
  
@@ -789,7 +787,7 @@ body {
     gap: 1rem;
     list-style: none;
     color: rgb(65, 79, 69);
-    gap: 2rem;
+    
     font-size: 1rem;
   
   }
@@ -888,14 +886,14 @@ body {
   }
 
   .child {
-    position: relative;
-    right: 1rem;
+    
     width: fit-content;
     list-style: none;
     margin: 1rem;
-    width: 80%;
+    width: 100%;
     background-color: rgb(65, 79, 69);
-  
+    height: fit-content;
+    
   }
   .child li {
  
@@ -904,8 +902,7 @@ body {
     white-space: wrap;
     font-size: 1.5rem;
     line-height: 3rem;
-    position: relative;
-    right: 2rem;
+    
   
   }
   
